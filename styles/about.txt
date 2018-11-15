@@ -1,0 +1,4 @@
+external stylesheets for the frontend go here
+
+reference them in pug templates like this:
+link(rel = "stylesheet" type="text/css" href = "/styles/<filename>")

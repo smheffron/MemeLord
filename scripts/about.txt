@@ -1,0 +1,4 @@
+external scripts for the frontend go here
+
+reference them in pug templates like this:
+script(src = "/scripts/<file name>")
