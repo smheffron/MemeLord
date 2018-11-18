@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <title>Meme Lord Login</title>
+        <link rel="stylesheet" type="text/css" href="styles/test.css">
+    
+    </head>
+
+    <body>
+    
+        <div id="backImg"></div>
+        <div id="mainTitle">MEME LORD</div>
+        <div id="loginContainer">
+        
+<!--            <span id="loginTitle">LOGIN</span>-->
+            
+            <!-- form is not used. Placed here in case users are added -->
+            <form>
+            
+                <input id="username" class="inputField" type="text" name="username" placeholder="Username" maxlength="25">
+                <input id="password" class="inputField" type="password" name="password" placeholder="Password" maxlength="25">
+                <input id="loginBtn" type="button" value="Login" onclick="checkLogin()"/>
+                <input id="signUp" type="button" value="Sign-Up" onclick="createUser()"/>
+                
+            </form>
+            
+            <img class="crownImg" src="crown1.png">
+        
+        </div>
+        
+        <script>
+            function checkLogin(){
+                if(document.getElementById('password').value == 'pass' && document.getElementById('username').value == 'user'){
+                    location.href = "http://chriscaldwelldev.com/";
+                } 
+                else {
+                    alert('The username/password has been entered incorrectly! Try again.');
+                    return false;
+                }
+            }
+            
+            function createUser(){
+                alert("User accounts cannot be created at this time. Use these credentials to sign in as an anonymous user: Username: user. Password: pass");
+            }
+            
+      </script>   
+    
+    </body>
+    
+
+</html>
