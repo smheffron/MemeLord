@@ -14,7 +14,7 @@ body{
 
 @font-face{
     font-family: title;
-    src: url("BungeeShade-Regular.ttf");
+    src: url("fontImage/BungeeShade-Regular.ttf");
 }
 
 #mainTitle{
@@ -380,7 +380,7 @@ body{
     
     .crownImg{
         width: 80%;
-        height: 150px;
+        height: 175px;
         opacity: 0.5;
     }
 }
