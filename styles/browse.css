@@ -1,0 +1,61 @@
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+/* Styles */
+    
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+/* Styles */
+    
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+    
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+    
+    
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+    
+    .memeContainer {
+        background-color: white;
+        color: black;
+        width: 70%;
+        border: 4px outset black;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    
+    .header {
+        background-color:mediumpurple;
+        color:white;
+        padding: 30px;
+    }
+    
+    .leftTitle .content {
+    }
+    
+    .category {
+        float: right;
+    }
+    
+    .memeTitle {
+        float: left;
+    }
+    
+    .label {
+    }
+}
