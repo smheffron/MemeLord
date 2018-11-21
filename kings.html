@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <title>Meme Lord Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/nav.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
+    </head>
+    
+    <body>
+    
+        <div class="topnav" id="Topnav">
+            <a href="javascript:void(0);" class="icon" onclick="checkResponsive()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <span class="title">MEME LORD</span>
+            <a id="pages"></a>
+            <a href="https://www.chriscaldwelldev.com/test/memeHome.html">Home</a>
+            <a href="https://www.chriscaldwelldev.com/test/kings.html" class="active">Meme Kings</a>
+            <a href="https://www.chriscaldwelldev.com/test/browse.html">Browse All/Post</a>
+            <a href="#about">Category</a>
+        </div>
+        
+        <div class="topTitle"><span class="shdwText">Current Meme Kings:</span></div>
+        
+        <!-- Short SCRIPT -->
+        <script>
+            function checkResponsive() {
+                var x = document.getElementById("Topnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    
+    </body>
