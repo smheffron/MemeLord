@@ -23,6 +23,18 @@ router.post('/login', function(req, res) {
 
 router.get('/home', function(req, res) {
     res.render('home');
+});
+
+router.get('/kings', function(req, res) {
+    res.render('kings');
+});
+
+router.get('/browse', function(req, res) {
+    res.render('browse');
+});
+
+router.get('/category', function(req, res) {
+    res.render('category');
 })
 
 module.exports = router;
