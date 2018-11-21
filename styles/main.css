@@ -43,6 +43,53 @@ body{
         .crwnImg{
             width: 80%;
         }
+        
+        .topTitle{
+            background-color: white;
+            color: black;
+            width: 90%;
+            border: 4px outset black;
+            position: relative;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .leftTitle{
+            background-color: white;
+            color: black;
+            width: 90%;
+            border: 4px outset black;
+            position: relative;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .upload-btn-wrapper {
+          position: relative;
+          overflow: hidden;
+          display: inline-block;
+        
+        }
+
+        .btn {
+              border: 2px solid gray;
+              color: gray;
+              background-color: white;
+              padding: 8px 20px;
+              border-radius: 8px;
+              font-size: 20px;
+              font-weight: bold;
+        }
+
+        .upload-btn-wrapper input[type=file] {
+              font-size: 100px;
+              position: absolute;
+              left: 0;
+              top: 0;
+              opacity: 0;
+        }
 }
 
 /* Smartphones (landscape) ----------- */
@@ -88,6 +135,54 @@ body{
             width: 80%;
             margin: auto;
         }
+        
+        /* kings.html */
+        .topTitle{
+            background-color: white;
+            color: black;
+            width: 80%;
+            border: 4px outset black;
+            position: relative;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .leftTitle{
+            background-color: white;
+            color: black;
+            width: 80%;
+            border: 4px outset black;
+            position: relative;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .upload-btn-wrapper {
+          position: relative;
+          overflow: hidden;
+          display: inline-block;
+        
+        }
+
+        .btn {
+              border: 2px solid gray;
+              color: gray;
+              background-color: white;
+              padding: 8px 20px;
+              border-radius: 8px;
+              font-size: 20px;
+              font-weight: bold;
+        }
+
+        .upload-btn-wrapper input[type=file] {
+              font-size: 100px;
+              position: absolute;
+              left: 0;
+              top: 0;
+              opacity: 0;
+        }
 }
 
 /* Desktops and laptops ----------- */
@@ -123,4 +218,55 @@ body{
         .crwnImg{
             width: 60%;
         }
+    
+    /* kings.html */
+        .topTitle{
+            background-color: white;
+            color: black;
+            width: 70%;
+            border: 4px outset black;
+            position: relative;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+        }
+    
+    .leftTitle{
+            background-color: white;
+            color: black;
+            width: 70%;
+            border: 4px outset black;
+            position: relative;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: left;
+    }
+    
+    .upload-btn-wrapper {
+          position: relative;
+          overflow: hidden;
+          display: inline-block;
+          margin-left:auto; 
+          margin-right:0;
+    }
+
+    .btn {
+          border: 2px solid gray;
+          color: gray;
+          background-color: white;
+          padding: 8px 20px;
+          border-radius: 8px;
+          font-size: 20px;
+          font-weight: bold;
+    }
+
+    .upload-btn-wrapper input[type=file] {
+          font-size: 100px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+          margin-left:auto; 
+          margin-right:0;
+    }
 }
