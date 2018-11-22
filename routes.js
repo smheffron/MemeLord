@@ -4,6 +4,8 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var Meme = require('./schemas/meme');
 
+var fs = require('fs');
+
 router.get('/', function(req, res) {
     res.render('login');
 });
@@ -30,21 +32,50 @@ router.get('/kings', function(req, res) {
 });
 
 router.get('/browse', function(req, res) {
-    var memeArray = new Array();
-    var Memes = mongoose.model('Meme', Meme.memeSchema);
-    var meme = new Memes({imageSrc:"scumbagMeme.png", category:"Cool Memes",title:"My Meme",likes: 12,comments: ["Hi", "Hello", "Cool"]}); 
-    
-    memeArray.push(meme);
-        
-    meme = new Memes({imageSrc:"3-nested-for-loops.jpg", category:"Bad Memes",title:"My Bad Meme",likes: 2,comments: ["What", "Whay", "How"]}); 
-    
-    memeArray.push(meme);
-    
-    res.render('browse', {memes:memeArray});
+    Meme.find(function(err, response) {
+        if (err) {
+            // render with error
+            console.log(err);
+            res.render('browse');
+        } else {
+            res.render('browse', {
+                memes: response
+            });
+        }
+    });
 });
 
 router.get('/category', function(req, res) {
     res.render('category');
+});
+
+router.post('/upload', function(req, res) {
+    var file = req.files.memeFile;
+    var fileName = Date.now() + '-' + file.name;
+    var path = __dirname + '/memeUploads/' + fileName;
+    
+    file.mv(path, function(err) {
+        if(err) {
+            // redirect with error
+            console.log(err);
+            res.redirect('/browse');
+        } else {
+            var newMeme = req.body;
+            
+            var meme = new Meme({
+                imageSrc: fileName,
+                category: newMeme.category,
+                title: newMeme.title,
+                likes: 0,
+                comments: [],
+                created: Date.now()
+            });
+            
+            meme.save();
+            
+            res.redirect('/browse');
+        }
+    });
 });
 
 module.exports = router;

@@ -11,13 +11,13 @@ const http = require("http");
 // };
 
 const bodyParser = require('body-parser');
-const multer = require('multer');
-const upload = multer();
+
+const fileUpload = require('express-fileupload');
 
 var routes = require('./routes.js');
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/mu_grade_dist', {useNewUrlParser: true}).catch(function(error){
+mongoose.connect('mongodb://localhost/meme_lord', {useNewUrlParser: true}).catch(function(error){
     console.log("Error connecting to MongoDB: " + error);
 });
 
@@ -29,7 +29,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-app.use(upload.array());
+app.use(fileUpload());
 
 app.use('/', routes);
 

@@ -5,7 +5,8 @@ var memeSchema = mongoose.Schema({
     category: String,
     title: String,
     likes: Number,
-    comments: [String]
+    comments: [String],
+    created: {type: Date, default: Date.now}
 });
 
 module.exports = mongoose.model("Meme", memeSchema);

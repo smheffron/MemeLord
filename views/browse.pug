@@ -22,9 +22,11 @@ html(lang = 'en')
             a(href = '/category') Category
         div.leftTitle
             span.normalText Post a Meme... Become a King!
-            div.upload-btn-wrapper
-                button.btn Upload a file
-                input(type = 'file' name='myfile')
+            form(action = '/upload' method = 'POST' enctype='multipart/form-data')
+                input(type = 'file' name = 'memeFile')
+                input(type = 'text' name = 'title' placeholder = ' Title')
+                input(type = 'text' name = 'category' placeholder = ' Category')
+                button(type = 'submit') Upload
         
         for meme in memes
             div.memeContainer
