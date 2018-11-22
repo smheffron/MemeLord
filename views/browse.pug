@@ -21,10 +21,28 @@ html(lang = 'en')
             a.active(href = '/browse') Browse All/Post
             a(href = '/category') Category
         div.leftTitle
-            span.normalText Post a Meme... Become a King!
+            div#centerTxt
+                span.normalText Post a Meme:
+            hr    
             div.upload-btn-wrapper
-                button.btn Upload a file
+                button.btn Upload A Photo
                 input(type = 'file' name='myfile')
+            br    
+            input.postInput#title(type = 'text' name='title' placeholder = 'Title...' maxlength = '50') 
+            select.selectInput#category
+                    option(value = '' disabled selected) Select A Category
+                    option(value = 'Bad Luck Brian') Bad Luck Brian
+                    option(value = 'Kermit') Kermit
+                    option(value = 'Office') Office
+                    option(value = 'Scumbag') Scumbag
+                    option(value = 'Delicious') Spicy and Delicious
+                    option(value = 'Spongebob') Spongebob
+                    option(value = 'Trolling') Trolling
+                    option(value = 'Weird Flex') Weird Flex...
+                    option(value = 'Wide Neck Guy') Wide Neck Guy
+                    option(value = 'Other') Other...
+            div.submit-btn-wrapper
+                button.submitBtn Post Meme
         
         for meme in memes
             div.memeContainer

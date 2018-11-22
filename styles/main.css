@@ -55,6 +55,11 @@ body{
             text-align: center;
         }
         
+        #centerTxt{
+            width: 100%;
+            text-align: center;
+        }
+        
         .leftTitle{
             background-color: white;
             color: black;
@@ -89,6 +94,51 @@ body{
               left: 0;
               top: 0;
               opacity: 0;
+            margin-left:auto; 
+            margin-right:0;
+        }
+        
+        .postInput{
+            width: 90%;
+            font-size: 30px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .catSubmitWrap{
+            width: 85%;
+            margin: 10px;
+            position: relative;
+        }
+
+        .selectInput{
+            width: 90%;
+            font-size: 30px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .submit-btn-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            margin-left:10px; 
+            margin-right:0;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .submitBtn {
+            border: 2px solid lightgreen;
+            color: lightgreen;
+            background-color: white;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
         }
 }
 
@@ -148,6 +198,11 @@ body{
             text-align: center;
         }
         
+        #centerTxt{
+            width: 100%;
+            text-align: center;
+        }
+        
         .leftTitle{
             background-color: white;
             color: black;
@@ -156,14 +211,14 @@ body{
             position: relative;
             margin: 10px auto;
             padding: 10px;
-            text-align: center;
+            text-align: left;
         }
         
         .upload-btn-wrapper {
-          position: relative;
-          overflow: hidden;
-          display: inline-block;
-        
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
         }
 
         .btn {
@@ -182,6 +237,50 @@ body{
               left: 0;
               top: 0;
               opacity: 0;
+            margin-left:auto; 
+            margin-right:0;
+        }
+        
+        .postInput{
+            width: 90%;
+            font-size: 30px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .catSubmitWrap{
+            width: 85%;
+            margin: 10px;
+            position: relative;
+        }
+
+        .selectInput{
+            width: 90%;
+            font-size: 30px;
+            border: 2px solid black;
+            border-radius: 5px; 
+            margin-top: 10px;
+        }
+
+        .submit-btn-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block; 
+            margin-right:0;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .submitBtn {
+            border: 2px solid lightgreen;
+            color: lightgreen;
+            background-color: white;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
         }
 }
 
@@ -208,11 +307,17 @@ body{
             font-size: 40px;
             color: red;
         }
+    
+    #centerTxt{
+        width: 100%;
+        text-align: center;
+    }
         
         .normalText{
             font-family: sans-serif;
             font-size: 25px;
             color: black;
+            text-align: center !important;
         }
         
         .crwnImg{
@@ -246,27 +351,73 @@ body{
           position: relative;
           overflow: hidden;
           display: inline-block;
-          margin-left:auto; 
+          margin-left:10px; 
           margin-right:0;
     }
 
     .btn {
-          border: 2px solid gray;
-          color: gray;
-          background-color: white;
-          padding: 8px 20px;
-          border-radius: 8px;
-          font-size: 20px;
-          font-weight: bold;
+        border: 2px solid gray;
+        color: gray;
+        background-color: white;
+        padding: 8px 20px;
+        border-radius: 8px;
+        font-size: 20px;
+        font-weight: bold;
     }
 
     .upload-btn-wrapper input[type=file] {
-          font-size: 100px;
-          position: absolute;
-          left: 0;
-          top: 0;
-          opacity: 0;
-          margin-left:auto; 
-          margin-right:0;
+        font-size: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        margin-left:auto; 
+        margin-right:0;
+        cursor: pointer;
+    }
+    
+    .postInput{
+        width: 48%;
+        font-size: 30px;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    
+    .catSubmitWrap{
+        width: 85%;
+        margin: 10px;
+        position: relative;
+    }
+    
+    .selectInput{
+        width: 48%;
+        font-size: 30px;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-left:10px; 
+        margin-top: 10px;
+    }
+    
+    .submit-btn-wrapper {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        margin-left:10px; 
+        margin-right:0;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .submitBtn {
+        border: 2px solid lightgreen;
+        color: lightgreen;
+        background-color: white;
+        padding: 8px 20px;
+        border-radius: 8px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
     }
 }
