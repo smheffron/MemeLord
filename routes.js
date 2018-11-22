@@ -30,21 +30,36 @@ router.get('/kings', function(req, res) {
 });
 
 router.get('/browse', function(req, res) {
-    var memeArray = new Array();
-    var Memes = mongoose.model('Meme', Meme.memeSchema);
-    var meme = new Memes({imageSrc:"scumbagMeme.png", category:"Cool Memes",title:"My Meme",likes: 12,comments: ["Hi", "Hello", "Cool"]}); 
     
-    memeArray.push(meme);
-        
-    meme = new Memes({imageSrc:"3-nested-for-loops.jpg", category:"Bad Memes",title:"My Bad Meme",likes: 2,comments: ["What", "Whay", "How"]}); 
+    Meme.find(function(err, response){
+        res.render('browse', {
+            memes: response
+        });
+    });    
+});
+
+router.get('/addLike/:id', function(req, res) {
     
-    memeArray.push(meme);
+    console.log(req.params.id);
     
-    res.render('browse', {memes:memeArray});
+    Meme.findByIdAndUpdate(req.params.id,{ $inc: { likes: 1}}, { new: true }, function(err, response){
+        if(err){
+            console.log("Couldn't update: " + err);
+        }
+    });
+    
+    res.redirect('/browse');
+    
 });
 
 router.get('/category', function(req, res) {
     res.render('category');
 });
+
+//router.get('/update/:id', function(req, res) {
+//    Meme.find({_id: req.params.id}, function(err, response) {
+//        res.json(response);
+//    });
+//});
 
 module.exports = router;

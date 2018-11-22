@@ -5,8 +5,12 @@ $(document).ready(function () {
 
 
 //this.name is the id of the meme clicked on
-function likeButtonClick(event) {
-    console.log(this.name);
+function likeButtonClick(event) {    
+    $.ajax({
+        type: 'GET',
+        url: '/addLike/'+this.name
+    });
+    
 }
 
 function commentButtonClick(event) {

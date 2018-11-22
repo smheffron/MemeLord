@@ -17,7 +17,7 @@ const upload = multer();
 var routes = require('./routes.js');
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/mu_grade_dist', {useNewUrlParser: true}).catch(function(error){
+mongoose.connect('mongodb://localhost/memeLord', {useNewUrlParser: true}).catch(function(error){
     console.log("Error connecting to MongoDB: " + error);
 });
 
