@@ -37,4 +37,6 @@ app.use('/scripts', express.static(__dirname + '/scripts'));
 
 app.use('/styles', express.static(__dirname + '/styles'));
 
+app.use('/memeUploads', express.static(__dirname + '/memeUploads'));
+
 http.createServer(app).listen(7000);

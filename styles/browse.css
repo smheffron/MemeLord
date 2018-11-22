@@ -42,20 +42,40 @@
     .header {
         background-color:mediumpurple;
         color:white;
-        padding: 30px;
-    }
-    
-    .leftTitle .content {
+        padding: 50px;
     }
     
     .category {
-        float: right;
+        font-size: 36px;
     }
     
     .memeTitle {
         float: left;
+        font-size: 36px;
     }
     
     .label {
+        font-size: 36px;
+        margin-right: 5px;
+    }
+    
+    .catagoryContainer {
+        float: right;
+    }
+    
+    .photo {
+        text-align: center;
+    }
+    .thumb {
+        
+    }
+    .comment {
+        
+    }
+    .thumbButton {
+        margin-right: 5px;
+    }
+    .commentButton {
+        margin-left: 10px;
     }
 }

@@ -32,11 +32,11 @@ router.get('/kings', function(req, res) {
 router.get('/browse', function(req, res) {
     var memeArray = new Array();
     var Memes = mongoose.model('Meme', Meme.memeSchema);
-    var meme = new Memes({imageSrc:"/janet", category:"Cool Memes",title:"My Meme",likes: 12,comments: ["Hi", "Hello", "Cool"]}); 
+    var meme = new Memes({imageSrc:"scumbagMeme.png", category:"Cool Memes",title:"My Meme",likes: 12,comments: ["Hi", "Hello", "Cool"]}); 
     
     memeArray.push(meme);
-    
-    meme = new Memes({imageSrc:"/janet", category:"Bad Memes",title:"My Bad Meme",likes: 2,comments: ["What", "Whay", "How"]}); 
+        
+    meme = new Memes({imageSrc:"3-nested-for-loops.jpg", category:"Bad Memes",title:"My Bad Meme",likes: 2,comments: ["What", "Whay", "How"]}); 
     
     memeArray.push(meme);
     

@@ -30,14 +30,21 @@ html(lang = 'en')
             div.memeContainer
                 div.header
                     span.memeTitle #{meme.title}                    
-                    i.material-icons.category.label label
-                    span.category #{meme.category}
-
+                    
+                    div.catagoryContainer
+                        i.material-icons.category.label label
+                        span.category #{meme.category}
+                br
+                
                 div.content
                     div.photo 
-                        p #{meme.imgSrc}
+                        img(src='/memeUploads/'+meme.imageSrc alt="meme") 
                     div.footer
-                        button
-                            i.material-icons thumb_up
+                        button.thumbButton
+                            i.material-icons.thumb thumb_up
                         span #{meme.likes}
+                        
+                        button.commentButton
+                            i.material-icons.comment comment
+                            
                         p #{meme.comments}
