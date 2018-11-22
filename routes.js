@@ -42,7 +42,7 @@ router.get('/browse', function(req, res) {
                 memes: response
             });
         }
-    }).sort({_id: 'descending'});   
+    });   
 });
 
 router.get('/addLike/:id', function(req, res) {    
