@@ -32,7 +32,7 @@ router.get('/kings', function(req, res) {
 });
 
 router.get('/browse', function(req, res) {
-    Meme.find(function(err, response) {
+    Meme.find({}).sort({created: -1}).exec(function(err, response) {
         if (err) {
             // render with error
             console.log(err);
