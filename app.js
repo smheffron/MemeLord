@@ -17,6 +17,7 @@ const fileUpload = require('express-fileupload');
 var routes = require('./routes.js');
 
 var mongoose = require('mongoose');
+
 mongoose.connect('mongodb://localhost/meme_lord', {useNewUrlParser: true}).catch(function(error){
     console.log("Error connecting to MongoDB: " + error);
 });

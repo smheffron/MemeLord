@@ -42,7 +42,19 @@ router.get('/browse', function(req, res) {
                 memes: response
             });
         }
+    });   
+});
+
+router.get('/addLike/:id', function(req, res) {    
+    console.log(req.params.id);
+    
+    Meme.findByIdAndUpdate(req.params.id,{ $inc: { likes: 1}}, { new: true }, function(err, response){
+        if(err){
+            console.log("Couldn't update: " + err);
+        }
     });
+    
+    res.redirect('/browse');
 });
 
 router.get('/category', function(req, res) {
@@ -77,5 +89,11 @@ router.post('/upload', function(req, res) {
         }
     });
 });
+
+//router.get('/update/:id', function(req, res) {
+//    Meme.find({_id: req.params.id}, function(err, response) {
+//        res.json(response);
+//    });
+//});
 
 module.exports = router;
