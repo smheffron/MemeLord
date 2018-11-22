@@ -79,4 +79,8 @@
         margin-left: 10px;
         margin-right: 5px;
     }
+    
+    .memeImg {
+        max-width: 70%;
+    }
 }
