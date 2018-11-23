@@ -40,4 +40,9 @@ app.use('/styles', express.static(__dirname + '/styles'));
 
 app.use('/memeUploads', express.static(__dirname + '/memeUploads'));
 
-http.createServer(app).listen(7000);
+var server = http.createServer(app);
+
+var io = require('socket.io')(server);
+app.io = io;
+
+server.listen(7000);

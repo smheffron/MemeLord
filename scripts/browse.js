@@ -1,6 +1,15 @@
 $(document).ready(function () {    
     $('.thumbButton').on('click', likeButtonClick);
     $('.commentButton').on('click', commentButtonClick);
+    
+    var socket = io();
+    
+    socket.on('updateLikes', function(meme) {
+        var id = 'likes-' + meme._id;
+        console.log(id);
+        console.log(meme.likes);
+        $('#' + id).html(meme.likes);
+    })
 });
 
 
