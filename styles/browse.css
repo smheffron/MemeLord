@@ -75,7 +75,7 @@
           width: 90%;
           font-size: 20px;
           border: 2px solid black;
-          margin: 10px;
+          margin: 10px auto;
           display: none;
       }
       
@@ -83,7 +83,7 @@
           width: 90%;
           font-size: 20px;
           color: black;
-          margin: 10px;
+          margin: 10px auto;
           display: none;
       }
     
@@ -168,7 +168,7 @@
           width: 90%;
           font-size: 20px;
           border: 2px solid black;
-          margin: 10px;
+          margin: 10px auto;
           display: none;
       }
       
@@ -176,7 +176,7 @@
           width: 90%;
           font-size: 20px;
           color: black;
-          margin: 10px;
+          margin: 10px auto;
           display: none;
       }
     
@@ -260,7 +260,7 @@
           width: 90%;
           font-size: 20px;
           border: 2px solid black;
-          margin: 10px;
+          margin: 10px auto;
           display: none;
       }
       
@@ -268,7 +268,7 @@
           width: 90%;
           font-size: 20px;
           color: black;
-          margin: 10px;
+          margin: 10px auto;
           display: none;
       }
     
@@ -353,7 +353,7 @@
           width: 90%;
           font-size: 20px;
           border: 2px solid black;
-          margin: 10px;
+          margin: 10px auto;
           display: none;
       }
       
@@ -361,7 +361,7 @@
           width: 90%;
           font-size: 20px;
           color: black;
-          margin: 10px;
+          margin: 10px auto;
           display: none;
       }
     
@@ -441,15 +441,15 @@
           width: 95%;
           font-size: 20px;
           border: 2px solid black;
-          margin: 10px;
+          margin: 10px auto;
           display: none;
       }
       
       .generalComment{
-          width: 90%;
+          width: 95%;
           font-size: 20px;
           color: black;
-          margin: 10px;
+          margin: 10px auto;
           display: none;
       }
 }
