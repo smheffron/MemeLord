@@ -8,6 +8,7 @@ html(lang = 'en')
         link(rel = "stylesheet" type = "text/css" href = "/styles/browse.css")
         link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
         link(rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        script(src = '/socket.io/socket.io.js')
         script(src = "https://code.jquery.com/jquery-3.3.1.min.js" integrity = "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin = "anonymous")
         script(src = '/scripts/responsive.js')
         script(src = '/scripts/browse.js')
@@ -71,7 +72,7 @@ html(lang = 'en')
                     div.footer
                         button(class='thumbButton' name=meme._id)
                             i.material-icons.thumb thumb_up
-                        span #{meme.likes}
+                        span(id = 'likes-'+meme._id) #{meme.likes}
                         
                         button(class='commentButton' name=meme._id)
                             i.material-icons.comment comment       

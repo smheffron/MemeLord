@@ -51,6 +51,15 @@ router.get('/addLike/:id', function(req, res) {
     Meme.findByIdAndUpdate(req.params.id,{ $inc: { likes: 1}}, { new: true }, function(err, response){
         if(err){
             console.log("Couldn't update: " + err);
+        } else {
+            Meme.find({_id:req.params.id}).select('likes').exec(function(err, response) {
+                if (err) {
+                    console.log(err);
+                } else {
+                    req.app.io.emit('updateLikes', response[0]._doc);
+                }
+            })
+            
         }
     });
     
