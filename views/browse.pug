@@ -24,7 +24,7 @@ html(lang = 'en')
         div.leftTitle
         
             div#centerTxt
-                span.normalText Post a Meme:
+                span.normalText Post A Meme:
             hr
             
             form(action = '/upload' method = 'POST' enctype='multipart/form-data')
@@ -39,7 +39,9 @@ html(lang = 'en')
                 select.selectInput#category(name = 'category')
                     option(value = '' disabled selected) Select A Category
                     option(value = 'Bad Luck Brian') Bad Luck Brian
+                    option(value = 'Expanding Brain') Expanding Brain
                     option(value = 'Kermit') Kermit
+                    option(value = 'Moth') Moth
                     option(value = 'Office') Office
                     option(value = 'Scumbag') Scumbag
                     option(value = 'Delicious') Spicy and Delicious
@@ -63,13 +65,16 @@ html(lang = 'en')
                 
                 div.content
                     div.photo 
-                        img.memeImg(src='/memeUploads/'+meme.imageSrc alt="meme") 
+                        img.memeImg(src='/memeUploads/'+meme.imageSrc alt="meme")
+                    br
+                    hr.styleHR
                     div.footer
                         button(class='thumbButton' name=meme._id)
                             i.material-icons.thumb thumb_up
                         span #{meme.likes}
                         
                         button(class='commentButton' name=meme._id)
-                            i.material-icons.comment comment
-                            
+                            i.material-icons.comment comment       
                         span #{meme.comments.length}
+                        br    
+                        input.addComment(type = 'text' name = 'addComment' placeholder = "Add a comment..." maxlength = '250') 

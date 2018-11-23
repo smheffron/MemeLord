@@ -2,6 +2,88 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 /* Styles */
+    .memeContainer {
+        background-color: white;
+        color: black;
+        width: 90%;
+        border: 4px outset black;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    
+    .header {
+        background-color:mediumpurple;
+        color:white;
+        position: relative;
+        padding: 10px;
+        border: 2px solid black;
+        text-align: center;
+    }
+    
+    .category {
+        font-size: 36px;
+    }
+    
+    .memeTitle {
+        margin: auto;
+        font-size: 36px;
+    }
+    
+    .label {
+        font-size: 36px;
+        margin-right: 5px;
+    }
+    
+    .catagoryContainer {
+        
+    }
+    
+    .photo {
+        text-align: center;
+    }
+    .thumb {
+        
+    }
+    .comment {
+        
+    }
+    .thumbButton {
+        margin-right: 5px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    .commentButton {
+        margin-left: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    .memeImg {
+        max-width: 70%;
+        border: 2px solid black;
+    }
+    
+    hr.styleHR{
+        border: 4px solid black;
+        border-radius: 5px;
+    }
+      
+      .addComment{
+          width: 90%;
+          font-size: 20px;
+          border: 2px solid black;
+          margin: 10px;
+          display: none;
+      }
+      
+      .generalComment{
+          width: 90%;
+          font-size: 20px;
+          color: black;
+      }
     
 }
 
@@ -10,11 +92,151 @@
   and (orientation: landscape) {
 /* Styles */
     
+    .memeContainer {
+        background-color: white;
+        color: black;
+        width: 80%;
+        border: 4px outset black;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    
+    .header {
+        background-color:mediumpurple;
+        color:white;
+        position: relative;
+        padding: 10px;
+        border: 2px solid black;
+        text-align: center;
+    }
+    
+    .category {
+        font-size: 36px;
+    }
+    
+    .memeTitle {
+        margin: auto;
+        font-size: 36px;
+    }
+    
+    .label {
+        font-size: 36px;
+        margin-right: 5px;
+    }
+    
+    .catagoryContainer {
+        
+    }
+    
+    .photo {
+        text-align: center;
+    }
+    .thumb {
+        
+    }
+    .comment {
+        
+    }
+    .thumbButton {
+        margin-right: 5px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    .commentButton {
+        margin-left: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    .memeImg {
+        max-width: 70%;
+        max-height: 70vh;
+        border: 2px solid black;
+    }
+    
+    hr.styleHR{
+        border: 4px solid black;
+        border-radius: 5px;
+    }
+    
 }
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 /* Styles */
+    
+    .memeContainer {
+        background-color: white;
+        color: black;
+        width: 80%;
+        border: 4px outset black;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    
+    .header {
+        background-color:mediumpurple;
+        color:white;
+        position: relative;
+        padding: 10px;
+        border: 2px solid black;
+        text-align: center;
+    }
+    
+    .category {
+        font-size: 36px;
+    }
+    
+    .memeTitle {
+        margin: auto;
+        font-size: 36px;
+    }
+    
+    .label {
+        font-size: 36px;
+        margin-right: 5px;
+    }
+    
+    .catagoryContainer {
+        
+    }
+    
+    .photo {
+        text-align: center;
+    }
+    .thumb {
+        
+    }
+    .comment {
+        
+    }
+    .thumbButton {
+        margin-right: 5px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    .commentButton {
+        margin-left: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    .memeImg {
+        max-width: 70%;
+        max-height: 70vh;
+        border: 2px solid black;
+    }
+    
+    hr.styleHR{
+        border: 4px solid black;
+        border-radius: 5px;
+    }
     
 
 }
@@ -22,6 +244,76 @@
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 /* Styles */
+    
+    .memeContainer {
+        background-color: white;
+        color: black;
+        width: 70%;
+        border: 4px outset black;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    
+    .header {
+        background-color:mediumpurple;
+        color:white;
+        position: relative;
+        padding: 10px;
+        border: 2px solid black;
+        text-align: center;
+    }
+    
+    .category {
+        font-size: 36px;
+    }
+    
+    .memeTitle {
+        margin: auto;
+        font-size: 36px;
+    }
+    
+    .label {
+        font-size: 36px;
+        margin-right: 5px;
+    }
+    
+    .catagoryContainer {
+        
+    }
+    
+    .photo {
+        text-align: center;
+    }
+    .thumb {
+        
+    }
+    .comment {
+        
+    }
+    .thumbButton {
+        margin-right: 5px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    .commentButton {
+        margin-left: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    .memeImg {
+        max-width: 70%;
+        max-height: 70vh;
+        border: 2px solid black;
+    }
+    
+    hr.styleHR{
+        border: 4px solid black;
+        border-radius: 5px;
+    }
     
     
 }
@@ -43,6 +335,7 @@
         background-color:mediumpurple;
         color:white;
         padding: 50px;
+        border: 2px solid black;
     }
     
     .category {
@@ -50,6 +343,7 @@
     }
     
     .memeTitle {
+        margin: auto;
         float: left;
         font-size: 36px;
     }
@@ -74,13 +368,37 @@
     }
     .thumbButton {
         margin-right: 5px;
+        cursor: pointer;
     }
     .commentButton {
         margin-left: 10px;
         margin-right: 5px;
+        cursor: pointer;
     }
     
     .memeImg {
         max-width: 70%;
+        max-height: 60vh;
+        border: 2px solid black;
+    }
+    
+    hr.styleHR{
+        border: 4px solid black;
+        border-radius: 5px;
+    }
+}
+
+@keyframes likeMe{
+    0%{
+        border: 1px solid rgb(0, 255, 0);
+        border: 1px solid rgba(0, 255, 0, .0);
+        -webkit-background-clip: padding-box; /* for Safari */
+        background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    }
+    100%{
+        border: 1px solid rgb(0, 255, 0);
+        border: 1px solid rgba(0, 255, 0, 1.0);
+        -webkit-background-clip: padding-box; /* for Safari */
+        background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     }
 }

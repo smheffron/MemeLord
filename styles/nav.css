@@ -72,7 +72,11 @@ body{
         color: white !important;
         height: 25px;
         background-color: #E02A03 !important;
-    }    
+    } 
+    .topnav a:hover {
+      background-color: #E02A03;
+      color: #f2f2f2;
+    }
 }
 
 /* Smart Phones */
@@ -108,5 +112,9 @@ body{
         font-family: title;
         height: 25px;
         background-color: #E02A03 !important;
+    }
+    .topnav a:hover {
+      background-color: #E02A03;
+      color: #f2f2f2;
     }
 }

@@ -17,30 +17,33 @@ body{
     src: url("fontImage/BungeeShade-Regular.ttf");
 }
 
-#mainTitle{
-    width: 100%;
-    margin-top: 10px;
-    text-align: center;
-    color: white;
-    font-family: title;
-    font-size: 100px;
-    position: absolute;
-    z-index: 2;
-}
-
 /* Smartphones (portrait) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 /* Styles */
+      
+    #mainTitle{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 0;
+        text-align: center;
+        color: white;
+        font-family: title;
+        font-size: 50px;
+        position: absolute;
+        z-index: 2;
+    }
+      
     #loginContainer{
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
         margin: auto;
+        margin-top: 0;
         width: 90%;
         height: 70vh;
-        margin-top: 150px;
+        margin-top: 100px;
         border: solid white 4px;
         border-radius: 40px;
         background: rgba(255,255,255, 0.3);
@@ -53,28 +56,30 @@ body{
     
     #loginTitle{
         font-family: sans-serif;
-        font-size: 750px;
+        font-size: 50px;
         color: white;
         text-shadow: 4px 4px 4px black;
         margin-top: 10px;
     }
         
     .inputField{
-        width: 90%;
-        height: 100px;
-        font-size: 40px;
+        width: 85%;
+        height: 40px;
+        font-size: 25px;
         border: solid black 2px;
         margin: 10px;
         border-radius: 10px;
         opacity: 0.8;
+        -webkit-appearance: none;
+        -moz-appearance: none;
     }
     
     #loginBtn{
-        width: 95%;
-        height: 100px;
-        font-size: 40px;
+        width: 90%;
+        height: 50px;
+        font-size: 25px;
         border: solid black 2px;
-        margin: 15px;
+        margin: 10px;
         border-radius: 10px;
         color: white;
         background-color: red;
@@ -85,11 +90,12 @@ body{
     }
     
     #signUp{
-        width: 95%;
-        height: 100px;
-        font-size: 40px;
+        width: 90%;
+        height: 50px;
+        font-size: 25px;
         border: solid black 2px;
         margin: 10px;
+        margin-bottom: 0;
         border-radius: 10px;
         color: white;
         background-color: purple;
@@ -101,7 +107,7 @@ body{
       
     .crownImg{
         width: 80%;
-        height: 600px;
+        height: 200px;
         opacity: 0.5;
     }
 }
@@ -110,6 +116,18 @@ body{
 @media only screen and (min-width : 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 /* Styles */
+      
+      #mainTitle{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        font-family: title;
+        font-size: 50px;
+        position: absolute;
+        z-index: 2;
+    }
+      
     #loginContainer{
         top: 0;
         bottom: 0;
@@ -118,7 +136,7 @@ body{
         margin: auto;
         width: 90%;
         height: 70vh;
-        margin-top: 150px;
+        margin-top: 100px;
         border: solid white 4px;
         border-radius: 40px;
         background: rgba(255,255,255, 0.3);
@@ -131,7 +149,7 @@ body{
     
     #loginTitle{
         font-family: sans-serif;
-        font-size: 75px;
+        font-size: 50px;
         color: white;
         text-shadow: 4px 4px 4px black;
         margin-top: 10px;
@@ -140,8 +158,8 @@ body{
         
     .inputField{
         width: 90%;
-        height: 50px;
-        font-size: 40px;
+        height: 30px;
+        font-size: 30px;
         border: solid black 2px;
         margin: 10px;
         border-radius: 10px;
@@ -150,8 +168,8 @@ body{
     
     #loginBtn{
         width: 95%;
-        height: 55px;
-        font-size: 25px;
+        height: 50px;
+        font-size: 30px;
         border: solid black 2px;
         margin: 10px;
         border-radius: 10px;
@@ -165,8 +183,8 @@ body{
     
     #signUp{
         width: 95%;
-        height: 55px;
-        font-size: 25px;
+        height: 50px;
+        font-size: 30px;
         border: solid black 2px;
         margin: 10px;
         border-radius: 10px;
@@ -188,6 +206,18 @@ body{
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 /* Styles */
+    
+    #mainTitle{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        font-family: title;
+        font-size: 100px;
+        position: absolute;
+        z-index: 2;
+    }
+    
     #loginContainer{
         top: 0;
         bottom: 0;
@@ -252,6 +282,18 @@ body{
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 /* Styles */
+    
+    #mainTitle{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        font-family: title;
+        font-size: 100px;
+        position: absolute;
+        z-index: 2;
+    }
+    
     #loginContainer{
         top: 0;
         bottom: 0;
@@ -316,6 +358,18 @@ body{
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
 /* Styles */
+    
+    #mainTitle{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        font-family: title;
+        font-size: 100px;
+        position: absolute;
+        z-index: 2;
+    }
+    
     #loginContainer{
         top: 0;
         bottom: 0;
