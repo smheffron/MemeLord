@@ -165,7 +165,7 @@
     }
       
       .addComment{
-          width: 80%;
+          width: 90%;
           font-size: 20px;
           border: 2px solid black;
           margin: 10px;
@@ -173,7 +173,7 @@
       }
       
       .generalComment{
-          width: 80%;
+          width: 90%;
           font-size: 20px;
           color: black;
           margin: 10px;
@@ -257,7 +257,7 @@
     }
     
     .addComment{
-          width: 80%;
+          width: 90%;
           font-size: 20px;
           border: 2px solid black;
           margin: 10px;
@@ -265,7 +265,7 @@
       }
       
       .generalComment{
-          width: 80%;
+          width: 90%;
           font-size: 20px;
           color: black;
           margin: 10px;
@@ -350,7 +350,7 @@
     }
     
     .addComment{
-          width: 70%;
+          width: 90%;
           font-size: 20px;
           border: 2px solid black;
           margin: 10px;
@@ -358,7 +358,7 @@
       }
       
       .generalComment{
-          width: 70%;
+          width: 90%;
           font-size: 20px;
           color: black;
           margin: 10px;
@@ -438,7 +438,7 @@
     }
     
     .addComment{
-          width: 70%;
+          width: 95%;
           font-size: 20px;
           border: 2px solid black;
           margin: 10px;
@@ -446,7 +446,7 @@
       }
       
       .generalComment{
-          width: 70%;
+          width: 90%;
           font-size: 20px;
           color: black;
           margin: 10px;
