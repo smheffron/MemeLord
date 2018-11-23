@@ -161,6 +161,20 @@
         border: 4px solid black;
         border-radius: 5px;
     }
+      
+      .addComment{
+          width: 80%;
+          font-size: 20px;
+          border: 2px solid black;
+          margin: 10px;
+          display: none;
+      }
+      
+      .generalComment{
+          width: 80%;
+          font-size: 20px;
+          color: black;
+      }
     
 }
 
@@ -237,6 +251,20 @@
         border: 4px solid black;
         border-radius: 5px;
     }
+    
+    .addComment{
+          width: 80%;
+          font-size: 20px;
+          border: 2px solid black;
+          margin: 10px;
+          display: none;
+      }
+      
+      .generalComment{
+          width: 80%;
+          font-size: 20px;
+          color: black;
+      }
     
 
 }
@@ -315,6 +343,20 @@
         border-radius: 5px;
     }
     
+    .addComment{
+          width: 70%;
+          font-size: 20px;
+          border: 2px solid black;
+          margin: 10px;
+          display: none;
+      }
+      
+      .generalComment{
+          width: 70%;
+          font-size: 20px;
+          color: black;
+      }
+    
     
 }
 
@@ -386,6 +428,20 @@
         border: 4px solid black;
         border-radius: 5px;
     }
+    
+    .addComment{
+          width: 70%;
+          font-size: 20px;
+          border: 2px solid black;
+          margin: 10px;
+          display: none;
+      }
+      
+      .generalComment{
+          width: 70%;
+          font-size: 20px;
+          color: black;
+      }
 }
 
 @keyframes likeMe{
