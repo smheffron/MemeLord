@@ -23,6 +23,5 @@ function likeButtonClick(event) {
 }
 
 function commentButtonClick(event) {
-    console.log(this.name);
-    $('.addComment').toggle();
+    $('#commentSection'+this.name).toggle();
 }
