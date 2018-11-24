@@ -37,4 +37,5 @@ function postCommentButtonClick(event) {
     $.post('/addComment/' + this.name, {
         comment: $('#commentSection' + this.name).val()
     });
+    $( ".addComment" ).val('');
 }

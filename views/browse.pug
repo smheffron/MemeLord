@@ -83,6 +83,13 @@ html(lang = 'en')
                         
                             input.addComment(type = 'text' id = "commentSection"+meme.id placeholder = "Add a comment..." maxlength = '250')
                             button.postCommentBtn.submitBtn(name = meme._id) Post
+                            br
+                            hr.styleHR
+                            span.commentTitle Comments:
                             ul(id = 'commentList-'+meme._id)
                                 for comment in meme.comments
-                                    li #{comment}
+                                    div.commentContainer
+                                        div.userName Anonymous User:
+                                        div.commentContent
+                                            li #{comment}
+                                    hr

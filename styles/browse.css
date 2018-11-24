@@ -62,7 +62,7 @@
     }
     
     .memeImg {
-        max-width: 70%;
+        max-width: 90%;
         border: 2px solid black;
     }
     
@@ -71,23 +71,48 @@
         border-radius: 5px;
     }
       
-      .addComment{
-          width: 90%;
-          font-size: 20px;
-          border: 2px solid black;
-          margin: 10px auto;
-      }
+    .addComment{
+        width: 90%;
+        font-size: 20px;
+        border: 2px solid black;
+        margin: 10px auto;
+    }
       
-      .generalComment{
-          width: 90%;
-          font-size: 20px;
-          color: black;
-          margin: 10px auto;
-      }
+    .commentContainer{
+/*        display: flex;*/
+        width: 95%;
+        font-size: 20px;
+        color: black;
+        margin-top: 10px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+      
+    .userName{
+        width: 100%;
+        font-weight: bold;
+    }
     
-      .commentWrapper {
-          display: none;
-      }
+    .commentContent{
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+        list-style-type: none;
+        list-style: none;
+        text-indent: none;
+        flex-grow: 1;
+    }
+    
+    .commentWrapper {
+        display: none;
+    }
+    
+    .commentTitle{
+        margin: 0;
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+    }
 }
 
 /* Smartphones (landscape) ----------- */
@@ -172,16 +197,41 @@
           margin: 10px auto;
       }
       
-      .generalComment{
-          width: 90%;
-          font-size: 20px;
-          color: black;
-          margin: 10px auto;
-      }
+      .commentContainer{
+/*        display: flex;*/
+        width: 95%;
+        font-size: 20px;
+        color: black;
+        margin-top: 10px;
+        margin-left: 0;
+        padding-left: 0;
+    }
       
-      .commentWrapper {
-          display: none;
-      }
+    .userName{
+        width: 100%;
+        font-weight: bold;
+    }
+    
+    .commentContent{
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+        list-style-type: none;
+        list-style: none;
+        text-indent: none;
+        flex-grow: 1;
+    }
+    
+    .commentWrapper {
+        display: none;
+    }
+    
+    .commentTitle{
+        margin: 0;
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+    }
     
 }
 
@@ -266,16 +316,40 @@
           margin: 10px auto;
       }
       
-      .generalComment{
-          width: 90%;
-          font-size: 20px;
-          color: black;
-          margin: 10px auto;
-      }
+      .commentContainer{
+        display: flex;
+        width: 95%;
+        font-size: 20px;
+        color: black;
+/*        margin-top: 10px;*/
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+      
+    .userName{
+        width: 20%;
+        font-weight: bold;
+    }
+    
+    .commentContent{
+        width: 60%;
+        padding-left: 0;
+        list-style-type: none;
+        list-style: none;
+        flex-grow: 1;
+    }
     
     .commentWrapper {
-          display: none;
-      }
+        display: none;
+        margin-left: 0;
+    }
+    
+    .commentTitle{
+        margin: 0;
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+    }
     
 
 }
@@ -359,18 +433,42 @@
           font-size: 20px;
           border: 2px solid black;
           margin: 10px auto;
-      }
+    }
+    
+    .commentContainer{
+        display: flex;
+        width: 95%;
+        font-size: 20px;
+        color: black;
+/*        margin-top: 10px;*/
+        margin: 0 !important;
+        padding: 0 !important;
+    }
       
-      .generalComment{
-          width: 90%;
-          font-size: 20px;
-          color: black;
-          margin: 10px auto;
-      }
+    .userName{
+        width: 20%;
+        font-weight: bold;
+    }
+    
+    .commentContent{
+        width: 60%;
+        padding-left: 0;
+        list-style-type: none;
+        list-style: none;
+        flex-grow: 1;
+    }
     
     .commentWrapper {
-          display: none;
-      }
+        display: none;
+        margin-left: 0;
+    }
+    
+    .commentTitle{
+        margin: 0;
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+    }
     
     
 }
@@ -445,35 +543,46 @@
     }
     
     .addComment{
-          width: 95%;
-          font-size: 20px;
-          border: 2px solid black;
-          margin: 10px auto;
-      }
+        width: 99%;
+        font-size: 20px;
+        border: 2px solid black;
+        margin: 10px auto;
+    }
+    
+    .commentContainer{
+        display: flex;
+        width: 95%;
+        font-size: 20px;
+        color: black;
+/*        margin-top: 10px;*/
+        margin: 0 !important;
+        padding: 0 !important;
+    }
       
-      .generalComment{
-          width: 95%;
-          font-size: 20px;
-          color: black;
-          margin: 10px auto;
-      }
+    .userName{
+        width: 20%;
+        font-weight: bold;
+    }
+    
+    .commentContent{
+        width: 60%;
+        padding-left: 0;
+        list-style-type: none;
+        list-style: none;
+        flex-grow: 1;
+    }
     
     .commentWrapper {
-          display: none;
-      }
-}
-
-@keyframes likeMe{
-    0%{
-        border: 1px solid rgb(0, 255, 0);
-        border: 1px solid rgba(0, 255, 0, .0);
-        -webkit-background-clip: padding-box; /* for Safari */
-        background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+        display: none;
+        margin-left: 0;
     }
-    100%{
-        border: 1px solid rgb(0, 255, 0);
-        border: 1px solid rgba(0, 255, 0, 1.0);
-        -webkit-background-clip: padding-box; /* for Safari */
-        background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    
+    .commentTitle{
+        margin: 0;
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
     }
+    
+    
 }
