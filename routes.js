@@ -28,7 +28,17 @@ router.get('/home', function(req, res) {
 });
 
 router.get('/kings', function(req, res) {
-    res.render('kings');
+   Meme.find({}).sort({likes: -1}).limit(5).exec(function(err, response) {
+        if (err) {
+            // render with error
+            console.log(err);
+            res.render('kings');
+        } else {
+            res.render('kings', {
+                memes: response
+            });
+        }
+    });
 });
 
 router.get('/browse', function(req, res) {
