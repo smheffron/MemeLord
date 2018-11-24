@@ -53,7 +53,7 @@
 /* Styles */
       
       .kings{
-          width: 95%;
+          width: 93%;
           margin: auto;
           margin-top: 10px;
           animation: gold 3s infinite;
@@ -61,7 +61,7 @@
       }
       
       .kings + .kings{
-          width: 95%;
+          width: 93%;
           margin: auto;
           margin-top: 10px;
           animation: silver 3s infinite;
@@ -69,7 +69,7 @@
       }
       
       .kings + .kings + .kings{
-          width: 95%;
+          width: 93%;
           margin: auto;
           margin-top: 10px;
           animation: bronze 3s infinite;
@@ -77,7 +77,7 @@
       }
       
       .kings + .kings + .kings + .kings{
-          width: 95%;
+          width: 93%;
           margin: auto;
           margin-top: 10px;
           animation: king 3s infinite;
@@ -85,7 +85,7 @@
       }
       
       .kings + .kings + .kings + .kings + .kings{
-          width: 95%;
+          width: 93%;
           margin: auto;
           margin-top: 10px;
           animation: king 3s infinite;
@@ -152,7 +152,7 @@
     }
     
     .memeImg {
-        max-width: 70%;
+        max-width: 90%;
         border: 2px solid black;
     }
     
@@ -211,42 +211,50 @@
   and (orientation: landscape) {
 /* Styles */
       
-      #firstPlace{
-          width: 85%;
+      .kings{
+          width: 83%;
           margin: auto;
           margin-top: 10px;
           animation: gold 3s infinite;
           padding: 5px;
       }
       
-      #secondPlace{
-          width: 85%;
+      .kings + .kings{
+          width: 83%;
           margin: auto;
           margin-top: 10px;
           animation: silver 3s infinite;
           padding: 5px;
-      }  
+      }
       
-      #thirdPlace{
-          width: 85%;
+      .kings + .kings + .kings{
+          width: 83%;
           margin: auto;
           margin-top: 10px;
           animation: bronze 3s infinite;
           padding: 5px;
-      }  
+      }
       
-      .kings{
-          width: 85%;
+      .kings + .kings + .kings + .kings{
+          width: 83%;
           margin: auto;
           margin-top: 10px;
           animation: king 3s infinite;
           padding: 5px;
-      }      
+      }
+      
+      .kings + .kings + .kings + .kings + .kings{
+          width: 83%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
     
     .memeContainer {
         background-color: white;
         color: black;
-        width: 90%;
+        width: 82%;
         border: 4px outset black;
         margin: 10px auto;
         padding: 10px;
@@ -303,7 +311,7 @@
     }
     
     .memeImg {
-        max-width: 70%;
+        max-width: 90%;
         max-height: 70vh;
         border: 2px solid black;
     }
@@ -361,6 +369,46 @@
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 /* Styles */
+    
+    .kings{
+          width: 82%;
+          margin: auto;
+          margin-top: 10px;
+          animation: gold 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings{
+          width: 82%;
+          margin: auto;
+          margin-top: 10px;
+          animation: silver 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings{
+          width: 82%;
+          margin: auto;
+          margin-top: 10px;
+          animation: bronze 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings + .kings{
+          width: 82%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings + .kings + .kings{
+          width: 82%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
     
     .memeContainer {
         background-color: white;
@@ -481,6 +529,46 @@
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 /* Styles */
     
+    .kings{
+          width: 71%;
+          margin: auto;
+          margin-top: 10px;
+          animation: gold 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings{
+          width: 71%;
+          margin: auto;
+          margin-top: 10px;
+          animation: silver 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings{
+          width: 71%;
+          margin: auto;
+          margin-top: 10px;
+          animation: bronze 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings + .kings{
+          width: 71%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
+      
+      .kings + .kings + .kings + .kings + .kings{
+          width: 71%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
+    
     .memeContainer {
         background-color: white;
         color: black;
@@ -600,42 +688,51 @@
 @media only screen  and (min-width : 1224px) {
 /* Styles */
     
-    #firstPlace{
-          width: 72%;
+    .kings{
+          width: 71%;
           margin: auto;
           margin-top: 10px;
           animation: gold 3s infinite;
           padding: 5px;
       }
       
-      #secondPlace{
-          width: 72%;
+      .kings + .kings{
+          width: 71%;
           margin: auto;
           margin-top: 10px;
           animation: silver 3s infinite;
           padding: 5px;
-      }  
+      }
       
-      #thirdPlace{
-          width: 72%;
+      .kings + .kings + .kings{
+          width: 71%;
           margin: auto;
           margin-top: 10px;
           animation: bronze 3s infinite;
           padding: 5px;
-      }  
+      }
       
-      .kings{
-          width: 72%;
+      .kings + .kings + .kings + .kings{
+          width: 71%;
           margin: auto;
           margin-top: 10px;
           animation: king 3s infinite;
           padding: 5px;
-      } 
+      }
+      
+      .kings + .kings + .kings + .kings + .kings{
+          width: 71%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
     
     .memeContainer {
         background-color: white;
         color: black;
-        width: 95%;
+        border: 4px outset black;
+        width: 70%;
         margin: 10px auto;
         padding: 10px;
     }
