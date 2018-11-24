@@ -153,21 +153,48 @@
         border-radius: 5px;
     }
       
-      .addComment{
-          width: 90%;
-          font-size: 20px;
-          border: 2px solid black;
-          margin: 10px auto;
-          display: none;
-      }
+    .addComment{
+        width: 90%;
+        font-size: 20px;
+        border: 2px solid black;
+        margin: 10px auto;
+    }
       
-      .generalComment{
-          width: 90%;
-          font-size: 20px;
-          color: black;
-          margin: 10px auto;
-          display: none;
-      }
+    .commentContainer{
+/*        display: flex;*/
+        width: 95%;
+        font-size: 20px;
+        color: black;
+        margin-top: 10px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+      
+    .userName{
+        width: 100%;
+        font-weight: bold;
+    }
+    
+    .commentContent{
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+        list-style-type: none;
+        list-style: none;
+        text-indent: none;
+        flex-grow: 1;
+    }
+    
+    .commentWrapper {
+        display: none;
+    }
+    
+    .commentTitle{
+        margin: 0;
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+    }
     
 }
 
@@ -283,16 +310,43 @@
           font-size: 20px;
           border: 2px solid black;
           margin: 10px auto;
-          display: none;
       }
       
-      .generalComment{
-          width: 90%;
-          font-size: 20px;
-          color: black;
-          margin: 10px auto;
-          display: none;
-      }
+      .commentContainer{
+/*        display: flex;*/
+        width: 95%;
+        font-size: 20px;
+        color: black;
+        margin-top: 10px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+      
+    .userName{
+        width: 100%;
+        font-weight: bold;
+    }
+    
+    .commentContent{
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+        list-style-type: none;
+        list-style: none;
+        text-indent: none;
+        flex-grow: 1;
+    }
+    
+    .commentWrapper {
+        display: none;
+    }
+    
+    .commentTitle{
+        margin: 0;
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+    }
     
 }
 
@@ -375,16 +429,42 @@
           font-size: 20px;
           border: 2px solid black;
           margin: 10px auto;
-          display: none;
       }
       
-      .generalComment{
-          width: 90%;
-          font-size: 20px;
-          color: black;
-          margin: 10px auto;
-          display: none;
-      }
+      .commentContainer{
+        display: flex;
+        width: 95%;
+        font-size: 20px;
+        color: black;
+/*        margin-top: 10px;*/
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+      
+    .userName{
+        width: 20%;
+        font-weight: bold;
+    }
+    
+    .commentContent{
+        width: 60%;
+        padding-left: 0;
+        list-style-type: none;
+        list-style: none;
+        flex-grow: 1;
+    }
+    
+    .commentWrapper {
+        display: none;
+        margin-left: 0;
+    }
+    
+    .commentTitle{
+        margin: 0;
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+    }
     
 
 }
@@ -463,21 +543,47 @@
         border-radius: 5px;
     }
     
-    .addComment{
+.addComment{
           width: 90%;
           font-size: 20px;
           border: 2px solid black;
           margin: 10px auto;
-          display: none;
-      }
+    }
+    
+    .commentContainer{
+        display: flex;
+        width: 95%;
+        font-size: 20px;
+        color: black;
+/*        margin-top: 10px;*/
+        margin: 0 !important;
+        padding: 0 !important;
+    }
       
-      .generalComment{
-          width: 90%;
-          font-size: 20px;
-          color: black;
-          margin: 10px auto;
-          display: none;
-      }
+    .userName{
+        width: 20%;
+        font-weight: bold;
+    }
+    
+    .commentContent{
+        width: 60%;
+        padding-left: 0;
+        list-style-type: none;
+        list-style: none;
+        flex-grow: 1;
+    }
+    
+    .commentWrapper {
+        display: none;
+        margin-left: 0;
+    }
+    
+    .commentTitle{
+        margin: 0;
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+    }
     
     
 }
@@ -583,18 +689,44 @@
     }
     
     .addComment{
-          width: 95%;
-          font-size: 20px;
-          border: 2px solid black;
-          margin: 10px auto;
-          display: none;
-      }
+        width: 99%;
+        font-size: 20px;
+        border: 2px solid black;
+        margin: 10px auto;
+    }
+    
+    .commentContainer{
+        display: flex;
+        width: 95%;
+        font-size: 20px;
+        color: black;
+/*        margin-top: 10px;*/
+        margin: 0 !important;
+        padding: 0 !important;
+    }
       
-      .generalComment{
-          width: 95%;
-          font-size: 20px;
-          color: black;
-          margin: 10px auto;
-          display: none;
-      }
+    .userName{
+        width: 20%;
+        font-weight: bold;
+    }
+    
+    .commentContent{
+        width: 60%;
+        padding-left: 0;
+        list-style-type: none;
+        list-style: none;
+        flex-grow: 1;
+    }
+    
+    .commentWrapper {
+        display: none;
+        margin-left: 0;
+    }
+    
+    .commentTitle{
+        margin: 0;
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+    }
 }
