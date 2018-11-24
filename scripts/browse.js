@@ -14,7 +14,10 @@ $(document).ready(function () {
         $('#comments-' + meme._id).html(meme.comments.length);
         $("#commentList-" + meme._id).html('');
         for(var i = 0; i < meme.comments.length; i++) {
-            $("#commentList-" + meme._id).append($("<li>").text(meme.comments[i]));
+            var commentToAdd = "<div class='commentContainer'><div class='userName'>Anonymous User:</div><div class'commentContent'><span>";
+            commentToAdd += meme.comments[i];
+            commentToAdd += "</span></div></div><hr>";
+            $("#commentList-" + meme._id).append(commentToAdd);
         }
     });
 });
