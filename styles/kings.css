@@ -52,7 +52,7 @@
   and (orientation: portrait) {
 /* Styles */
       
-      #firstPlace{
+      .kings{
           width: 95%;
           margin: auto;
           margin-top: 10px;
@@ -60,29 +60,37 @@
           padding: 5px;
       }
       
-      #secondPlace{
+      .kings + .kings{
           width: 95%;
           margin: auto;
           margin-top: 10px;
           animation: silver 3s infinite;
           padding: 5px;
-      }  
+      }
       
-      #thirdPlace{
+      .kings + .kings + .kings{
           width: 95%;
           margin: auto;
           margin-top: 10px;
           animation: bronze 3s infinite;
           padding: 5px;
-      }  
+      }
       
-      .kings{
+      .kings + .kings + .kings + .kings{
           width: 95%;
           margin: auto;
           margin-top: 10px;
           animation: king 3s infinite;
           padding: 5px;
-      }    
+      }
+      
+      .kings + .kings + .kings + .kings + .kings{
+          width: 95%;
+          margin: auto;
+          margin-top: 10px;
+          animation: king 3s infinite;
+          padding: 5px;
+      }
       
     .memeContainer {
         background-color: white;
