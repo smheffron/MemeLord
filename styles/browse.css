@@ -76,7 +76,6 @@
           font-size: 20px;
           border: 2px solid black;
           margin: 10px auto;
-          display: none;
       }
       
       .generalComment{
@@ -84,9 +83,11 @@
           font-size: 20px;
           color: black;
           margin: 10px auto;
-          display: none;
       }
     
+      .commentWrapper {
+          display: none;
+      }
 }
 
 /* Smartphones (landscape) ----------- */
@@ -169,7 +170,6 @@
           font-size: 20px;
           border: 2px solid black;
           margin: 10px auto;
-          display: none;
       }
       
       .generalComment{
@@ -177,6 +177,9 @@
           font-size: 20px;
           color: black;
           margin: 10px auto;
+      }
+      
+      .commentWrapper {
           display: none;
       }
     
@@ -261,7 +264,6 @@
           font-size: 20px;
           border: 2px solid black;
           margin: 10px auto;
-          display: none;
       }
       
       .generalComment{
@@ -269,6 +271,9 @@
           font-size: 20px;
           color: black;
           margin: 10px auto;
+      }
+    
+    .commentWrapper {
           display: none;
       }
     
@@ -354,7 +359,6 @@
           font-size: 20px;
           border: 2px solid black;
           margin: 10px auto;
-          display: none;
       }
       
       .generalComment{
@@ -362,6 +366,9 @@
           font-size: 20px;
           color: black;
           margin: 10px auto;
+      }
+    
+    .commentWrapper {
           display: none;
       }
     
@@ -442,7 +449,6 @@
           font-size: 20px;
           border: 2px solid black;
           margin: 10px auto;
-          display: none;
       }
       
       .generalComment{
@@ -450,6 +456,9 @@
           font-size: 20px;
           color: black;
           margin: 10px auto;
+      }
+    
+    .commentWrapper {
           display: none;
       }
 }

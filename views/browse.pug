@@ -77,9 +77,12 @@ html(lang = 'en')
                         button(class='commentButton' name=meme._id)
                             i.material-icons.comment comment       
                         span(id = 'comments-'+meme._id) #{meme.comments.length}
-                        br    
-                        input.addComment(type = 'text' id = "commentSection"+meme.id placeholder = "Add a comment..." maxlength = '250')
-                        button.postCommentBtn.submitBtn(name = meme._id) Post
-                        ul(id = 'commentList-'+meme._id)
-                            for comment in meme.comments
-                                li #{comment}
+                        br
+                        
+                        div.commentWrapper(id = "commentSectionWrapper"+meme.id)
+                        
+                            input.addComment(type = 'text' id = "commentSection"+meme.id placeholder = "Add a comment..." maxlength = '250')
+                            button.postCommentBtn.submitBtn(name = meme._id) Post
+                            ul(id = 'commentList-'+meme._id)
+                                for comment in meme.comments
+                                    li #{comment}

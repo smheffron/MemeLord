@@ -30,7 +30,7 @@ function likeButtonClick(event) {
 }
 
 function commentButtonClick(event) {
-    $('#commentSection' + this.name).toggle();
+    $('#commentSectionWrapper' + this.name).toggle();
 }
 
 function postCommentButtonClick(event) {
