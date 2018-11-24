@@ -45,25 +45,37 @@ router.get('/browse', function(req, res) {
     });   
 });
 
-router.get('/addLike/:id', function(req, res) {    
-    console.log(req.params.id);
-    
+router.get('/addLike/:id', function(req, res) {
     Meme.findByIdAndUpdate(req.params.id,{ $inc: { likes: 1}}, { new: true }, function(err, response){
         if(err){
             console.log("Couldn't update: " + err);
         } else {
-            Meme.find({_id:req.params.id}).select('likes').exec(function(err, response) {
-                if (err) {
+            Meme.find({_id: req.params.id}).select('likes').exec(function(err, response) {
+                if(err) {
                     console.log(err);
                 } else {
                     req.app.io.emit('updateLikes', response[0]._doc);
                 }
-            })
+            });
             
         }
     });
-    
-    res.redirect('/browse');
+});
+
+router.post('/addComment/:id', function(req, res) {
+    Meme.findOneAndUpdate({_id: req.params.id}, {$push: {comments: req.body.comment}}, function(err, response) {
+        if(err) {
+            console.log("Couln't update: " + err);
+        } else {
+            Meme.find({_id: req.params.id}).select('comments').exec(function(err, response) {
+                if(err) {
+                    console.log(err);
+                } else {
+                    req.app.io.emit('updateComments', response[0]._doc);
+                }
+            });
+        }
+    });
 });
 
 router.get('/category', function(req, res) {

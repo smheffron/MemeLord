@@ -1,15 +1,22 @@
 $(document).ready(function () {    
     $('.thumbButton').on('click', likeButtonClick);
     $('.commentButton').on('click', commentButtonClick);
+    $('.postCommentBtn').on('click', postCommentButtonClick);
     
     var socket = io();
     
     socket.on('updateLikes', function(meme) {
-        var id = 'likes-' + meme._id;
-        console.log(id);
-        console.log(meme.likes);
-        $('#' + id).html(meme.likes);
-    })
+        $('#likes-' + meme._id).html(meme.likes);
+    });
+    
+    socket.on('updateComments', function(meme) {
+        console.dir(meme);
+        $('#comments-' + meme._id).html(meme.comments.length);
+        $("#commentList-" + meme._id).html('');
+        for(var i = 0; i < meme.comments.length; i++) {
+            $("#commentList-" + meme._id).append($("<li>").text(meme.comments[i]));
+        }
+    });
 });
 
 
@@ -23,5 +30,11 @@ function likeButtonClick(event) {
 }
 
 function commentButtonClick(event) {
-    $('#commentSection'+this.name).toggle();
+    $('#commentSection' + this.name).toggle();
+}
+
+function postCommentButtonClick(event) {
+    $.post('/addComment/' + this.name, {
+        comment: $('#commentSection' + this.name).val()
+    });
 }
