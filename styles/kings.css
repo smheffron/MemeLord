@@ -1,48 +1,48 @@
 @keyframes gold{
         0%{
-            background-color: transparent;
+            background-color: white;
         }
         50%{
             background-color: #FFD700;
         }
         100%{
-            background-color: transparent;
+            background-color: white;
         }  
 }
 
 @keyframes silver{
         0%{
-            background-color: transparent;
+            background-color: white;
         }
         50%{
             background-color: #C0C0C0;
         }
         100%{
-            background-color: transparent;
+            background-color: white;
         }  
 }
 
 @keyframes bronze{
         0%{
-            background-color: transparent;
+            background-color: white;
         }
         50%{
             background-color: #cd7f32;
         }
         100%{
-            background-color: transparent;
+            background-color: white;
         }  
 }
 
 @keyframes king{
         0%{
-            background-color: transparent;
+            background-color: white;
         }
         50%{
             background-color: #E02A03;
         }
         100%{
-            background-color: transparent;
+            background-color: white;
         }  
 }
 
