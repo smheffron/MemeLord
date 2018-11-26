@@ -11,7 +11,6 @@ html(lang = 'en')
         script(src = '/socket.io/socket.io.js')
         script(src = "https://code.jquery.com/jquery-3.3.1.min.js" integrity = "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin = "anonymous")
         script(src = '/scripts/responsive.js')
-        script(src = '/scripts/categories.js')
     body
         div.topnav#Topnav
             a.icon(href = 'javascript:void(0);' onclick = 'checkResponsive()')
@@ -29,49 +28,5 @@ html(lang = 'en')
             hr
         
         for category in categories
-            a(href='/category/'+category)
-                div.memeContainer
-                    span.memeTitle.cat(name=category) #{category}
-                
-
-
-        
-//        for meme in memes
-//            div.memeContainer
-//                div.header
-//                    span.memeTitle #{meme.title}                    
-//                    
-//                    div.catagoryContainer
-//                        i.material-icons.category.label label
-//                        span.category #{meme.category}
-//                br
-//                
-//                div.content
-//                    div.photo 
-//                        img.memeImg(src='/memeUploads/'+meme.imageSrc alt="meme")
-//                    br
-//                    hr.styleHR
-//                    div.footer
-//                        button(class='thumbButton' name=meme._id)
-//                            i.material-icons.thumb thumb_up
-//                        span(id = 'likes-'+meme._id) #{meme.likes}
-//                        
-//                        button(class='commentButton' name=meme._id)
-//                            i.material-icons.comment comment       
-//                        span(id = 'comments-'+meme._id) #{meme.comments.length}
-//                        br
-//                        
-//                        div.commentWrapper(id = "commentSectionWrapper"+meme.id)
-//                        
-//                            input.addComment(type = 'text' id = "commentSection"+meme.id placeholder = "Add a comment..." maxlength = '250')
-//                            button.postCommentBtn.submitBtn(name = meme._id) Post
-//                            br
-//                            hr.styleHR
-//                            span.commentTitle Comments:
-//                            ul(id = 'commentList-'+meme._id)
-//                                for comment in meme.comments
-//                                    div.commentContainer
-//                                        div.userName Anonymous User:
-//                                        div.commentContent
-//                                            li #{comment}
-//                                    hr
+            a.cat(href='/category/'+category name=category) #{category}
+            br
