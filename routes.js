@@ -55,8 +55,8 @@ router.get('/browse', function(req, res) {
     });   
 });
 
-router.get('/addLike/:id', function(req, res) {
-    Meme.findByIdAndUpdate(req.params.id,{ $inc: { likes: 1}}, { new: true }, function(err, response){
+router.post('/addLike/:id', function(req, res) {
+    Meme.findOneAndUpdate({_id: req.params.id}, { $inc: { likes: 1}}, { new: true }, function(err, response){
         if(err){
             console.log("Couldn't update: " + err);
         } else {
@@ -67,7 +67,6 @@ router.get('/addLike/:id', function(req, res) {
                     req.app.io.emit('updateLikes', response[0]._doc);
                 }
             });
-            
         }
     });
 });
