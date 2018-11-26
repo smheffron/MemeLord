@@ -24,12 +24,11 @@ $(document).ready(function () {
 
 
 //this.name is the id of the meme clicked on
-function likeButtonClick(event) {    
-    $.ajax({
-        type: 'GET',
-        url: '/addLike/'+this.name
-    });
-    
+function likeButtonClick(event) {
+    if (window.localStorage.getItem(this.name) !== 'true') {
+        $.post('/addLike/' + this.name);
+        window.localStorage.setItem(this.name, 'true');
+    }
 }
 
 function commentButtonClick(event) {
