@@ -113,6 +113,27 @@
         font-size: 30px;
         color: black;
     }
+      
+      .catDiv{
+          width: 90%;
+          color: black;
+          margin: auto;
+          font-size: 20px;
+          border: 4px outset black;
+          background-color: white;
+          text-align: center;
+          padding: 10px;
+      }
+      
+      .cat{
+          display: block;
+          text-decoration: underline;
+          font-weight: bold;
+          color: black;
+          font-size: 20px;
+      }
+      
+      
 }
 
 /* Smartphones (landscape) ----------- */
@@ -232,6 +253,25 @@
         font-size: 30px;
         color: black;
     }
+      
+      .catDiv{
+          width: 80%;
+          color: black;
+          margin: auto;
+          font-size: 20px;
+          border: 4px outset black;
+          background-color: white;
+          text-align: center;
+          padding: 10px;
+      }
+      
+      .cat{
+          display: block;
+          text-decoration: underline;
+          font-weight: bold;
+          color: black;
+          font-size: 20px;
+      }
     
 }
 
@@ -350,6 +390,25 @@
         font-size: 30px;
         color: black;
     }
+    
+    .catDiv{
+          width: 80%;
+          color: black;
+          margin: auto;
+          font-size: 20px;
+          border: 4px outset black;
+          background-color: white;
+          text-align: center;
+          padding: 10px;
+      }
+      
+      .cat{
+          display: block;
+          text-decoration: underline;
+          font-weight: bold;
+          color: black;
+          font-size: 20px;
+      }
     
 
 }
@@ -470,6 +529,25 @@
         color: black;
     }
     
+    .catDiv{
+          width: 70%;
+          color: black;
+          margin: auto;
+          font-size: 20px;
+          border: 4px outset black;
+          background-color: white;
+          text-align: center;
+          padding: 10px;
+      }
+      
+      .cat{
+          display: block;
+          text-decoration: underline;
+          font-weight: bold;
+          color: black;
+          font-size: 20px;
+      }
+    
     
 }
 
@@ -586,6 +664,25 @@
     
     .categoryContainer {
     }
+    
+    .catDiv{
+          width: 70%;
+          color: black;
+          margin: auto;
+          font-size: 20px;
+          border: 4px outset black;
+          background-color: white;
+          text-align: center;
+          padding: 10px;
+      }
+      
+      .cat{
+          display: block;
+          text-decoration: underline;
+          font-weight: bold;
+          color: black;
+          font-size: 20px;
+      }
     
     
 }
