@@ -89,7 +89,21 @@ router.post('/addComment/:id', function(req, res) {
 });
 
 router.get('/category', function(req, res) {
-    res.render('category');
+    Meme.find().distinct('category', function(err, response) {
+        if (err) {
+            // render with error
+            console.log(err);
+            res.render('category');
+        } else {
+            
+            console.log(response);
+            
+            res.render('category', {
+                categories: response
+            });
+        }
+        
+    });
 });
 
 router.post('/upload', function(req, res) {
@@ -121,10 +135,21 @@ router.post('/upload', function(req, res) {
     });
 });
 
-//router.get('/update/:id', function(req, res) {
-//    Meme.find({_id: req.params.id}, function(err, response) {
-//        res.json(response);
-//    });
-//});
+router.get('/category/:category'), function(req, res) {
+    var category = req.params.category;
+    
+    Meme.find({category:category}).sort({created: -1}).exec(function(err, response) {
+        if (err) {
+            // render with error
+            console.log(err);
+            res.render('category');
+        } else {
+            res.render('category', {
+                memes: response
+            });
+        }
+    }); 
+    
+}
 
 module.exports = router;
