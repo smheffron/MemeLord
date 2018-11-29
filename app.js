@@ -1,14 +1,13 @@
 const express = require('express');
 const app = express();
 
-const http = require("http");
-// const https = require("https");
-// var fs = require("fs");
-// const options = {
-//     key: fs.readFileSync("/home/rmfvg5/server/encryption/server.key"),
-//     cert: fs.readFileSync("/home/rmfvg5/server/encryption/ryanfilkins.site.crt"),
-//     ca: fs.readFileSync("/home/rmfvg5/server/encryption/intermediate.crt")
-// };
+const https = require("https");
+var fs = require("fs");
+const options = {
+    key: fs.readFileSync("/home/rmfvg5/server/encryption/server.key"),
+    cert: fs.readFileSync("/home/rmfvg5/server/encryption/ryanfilkins.site.crt"),
+    ca: fs.readFileSync("/home/rmfvg5/server/encryption/intermediate.crt")
+};
 
 const bodyParser = require('body-parser');
 
@@ -40,7 +39,7 @@ app.use('/styles', express.static(__dirname + '/styles'));
 
 app.use('/memeUploads', express.static(__dirname + '/memeUploads'));
 
-var server = http.createServer(app);
+var server = https.createServer(options, app);
 
 var io = require('socket.io')(server);
 app.io = io;
